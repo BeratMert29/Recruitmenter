@@ -106,4 +106,4 @@ Recruitmenter/
 
 ## 💬 Contact
 
-Project by (https://github.com/BeratMert29) && (https://github.com/cerentkn04) 
+Project by (https://github.com/BeratMert29) && (https://github.com/cerentkn04) && (https://github.com/Cain6565)
