@@ -1,0 +1,342 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-accent: #7c3aed;
+  --primary-muted: #dbeafe;
+  --text-color: #0f172a;
+  --text-subtle: #6b7280;
+  --border-color: #e2e8f0;
+  --success-bg: #ecfdf5;
+  --success-text: #047857;
+  --error-bg: #fef2f2;
+  --error-text: #b91c1c;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(37, 99, 235, 0.15), transparent 35%),
+    #f5f7fb;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.auth-card {
+  display: flex;
+  width: min(1100px, 100%);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 35px 120px rgba(15, 23, 42, 0.18);
+  background-color: #fff;
+}
+
+.auth-illustration {
+  flex: 1;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(124, 58, 237, 0.95));
+  color: #f8fafc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.auth-illustration::after {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+.auth-illustration h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin: 1.5rem 0 1rem;
+}
+
+.auth-illustration p {
+  color: rgba(248, 250, 252, 0.85);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.auth-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.auth-logo {
+  width: clamp(180px, 28vw, 260px);
+  height: auto;
+  filter: drop-shadow(0 30px 60px rgba(15, 23, 42, 0.35));
+}
+
+.auth-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.auth-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.auth-highlights span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(248, 250, 252, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.auth-panel {
+  flex: 1;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 999px;
+  margin: 0 auto 2rem;
+  gap: 0.35rem;
+  width: fit-content;
+}
+
+.auth-tabs button {
+  border: none;
+  background: none;
+  padding: 0.9rem 2.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.auth-tabs button.active {
+  background-color: #fff;
+  color: var(--primary-color);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+}
+
+.auth-tabs button:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.auth-header h3 {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem;
+}
+
+.auth-header p {
+  margin: 0 0 2rem;
+  color: var(--text-subtle);
+  line-height: 1.5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+.form-group input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-accent));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.25);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 45px rgba(37, 99, 235, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.message {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  border-color: rgba(185, 28, 28, 0.2);
+}
+
+.success-message {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+  border-color: rgba(4, 120, 87, 0.2);
+}
+
+.form-switch {
+  text-align: center;
+  margin-top: 1.75rem;
+  color: var(--text-subtle);
+  font-size: 0.9rem;
+}
+
+.form-switch.subtle {
+  color: #94a3b8;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-left: 0.35rem;
+  cursor: pointer;
+}
+
+.switch-btn:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.switch-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .auth-card {
+    flex-direction: column;
+  }
+
+  .auth-illustration,
+  .auth-panel {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-illustration {
+    padding: 2rem;
+  }
+
+  .auth-panel {
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .auth-tabs {
+    width: 100%;
+  }
+
+  .auth-tabs button {
+    flex: 1;
+  }
+}
+/* Role Selector */
+.role-selector {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.role-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-btn:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-muted);
+}
+
+.role-btn.active {
+  border-color: var(--primary-color);
+  background-color: var(--primary-muted);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.role-icon {
+  font-size: 1.5rem;
+}
+
+.role-btn span:last-child {
+  font-weight: 500;
+  color: var(--text-color);
+}

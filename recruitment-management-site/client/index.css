@@ -1,0 +1,21 @@
+/* src/index.css */
+
+:root {
+    --color-platinum: #DCDCDD;
+    --color-silver-pink: #C5C3C6;
+    --color-outer-space: #46494C;
+    --color-charcoal: #4C5C68;
+    --color-steel-blue: #1985A1;
+  
+    --font-color: var(--color-outer-space);
+    --background-color: var(--color-platinum);
+    --primary-button-color: var(--color-steel-blue);
+    --form-background-color: white;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+  }

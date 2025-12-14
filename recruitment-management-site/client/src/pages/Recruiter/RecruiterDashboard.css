@@ -1,0 +1,263 @@
+.recruiter-dashboard {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.recruiter-dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recruiter-dashboard__header h1 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: #64748b;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--primary-color), #7c3aed);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.25);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.05);
+}
+
+.stat-card p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 2rem;
+  margin: 0.3rem 0;
+  color: #0f172a;
+}
+
+.stat-card span {
+  color: #22c55e;
+  font-size: 0.85rem;
+}
+
+.recruiter-dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.card-header a {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-header small {
+  color: #94a3b8;
+}
+
+.pipeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pipeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid #eef2ff;
+  border-radius: 14px;
+  padding: 0.9rem 1.1rem;
+}
+
+.pipeline-stage {
+  margin: 0;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.pipeline-item small {
+  color: #94a3b8;
+}
+
+.pipeline-item strong {
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.event-list,
+.action-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-list li {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-list li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.event-list h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.event-list li > div p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.event-description {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.action-list li {
+  border: 1px solid #f1f5f9;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action-list li.priority {
+  border-color: #fee2e2;
+  background: #fff7f7;
+}
+
+.action-list h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
+.action-list p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.action-list button {
+  border: none;
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.roles-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.roles-card th,
+.roles-card td {
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.roles-card th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.roles-card td {
+  color: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .recruiter-dashboard__header {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
+

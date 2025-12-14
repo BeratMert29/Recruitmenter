@@ -1,0 +1,160 @@
+/* Soft gradient background */
+.landing {
+  background: linear-gradient(135deg, #fff5f5, #f8fafc 60%);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---------------- NAVBAR ------------------ */
+.navbar {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #334155;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f43f5e;
+}
+
+/* ---------------- HERO SECTION ------------------ */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+  gap: 3rem;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.tagline {
+  color: #6366f1;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #475569;
+  width: 80%;
+}
+
+/* Cute gradient button */
+.start-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
+  transition: 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Image styling */
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ---------------- STEPS SECTION ------------------ */
+.steps-section {
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+}
+
+.steps-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.steps-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Card base */
+.step-card {
+  flex: 1;
+  padding: 1.7rem;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Pastel card colors */
+.green {
+  background: #87D8FD;
+}
+
+.yellow {
+  background: #BBE9A5;
+}
+
+.teal {
+  background: #FF9DA8;
+}
+
+.blue {
+  background: #FFC79A;
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step-card p {
+  opacity: 0.9;
+}

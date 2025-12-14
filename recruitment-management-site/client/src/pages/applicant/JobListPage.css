@@ -1,0 +1,99 @@
+.jobs-list-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  .jobs-list-container h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .jobs-list-container p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .jobs-filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .filter-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    background-color: #f8fafc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .filter-group input:focus,
+  .filter-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    .jobs-filters {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .jobs-alert {
+    background-color: #fff7ed;
+    border: 1px solid #fdba74;
+    color: #c2410c;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .jobs-loading,
+  .jobs-empty {
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .jobs-loading {
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+  }
+
+  .jobs-empty {
+    background-color: #eef2ff;
+    color: #4338ca;
+    border: 1px solid #c7d2fe;
+  }

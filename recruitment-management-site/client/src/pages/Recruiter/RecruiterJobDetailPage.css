@@ -1,0 +1,116 @@
+.recruiter-job-detail-container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn-back {
+  background: #0ea5e9;
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+.btn-back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+  background: #0284c7;
+}
+
+.recruiter-job-detail-container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2.25rem;
+  letter-spacing: -0.5px;
+}
+
+.job-meta {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  border: 2px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.job-meta:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border-color: #94a3b8;
+}
+
+.job-meta p {
+  margin: 0.75rem 0;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.job-meta strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.job-description-full,
+.job-detailed-description {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2.25rem;
+  margin-bottom: 1.35rem;
+  border: 2px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.job-description-full:hover,
+.job-detailed-description:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border-color: #94a3b8;
+}
+
+.job-description-full h3,
+.job-detailed-description h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.35rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.job-description-full p,
+.job-detailed-description p {
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .recruiter-job-detail-container {
+    padding: 1.5rem;
+  }
+
+  .recruiter-job-detail-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .job-meta,
+  .job-description-full,
+  .job-detailed-description {
+    padding: 1.5rem;
+  }
+}
+

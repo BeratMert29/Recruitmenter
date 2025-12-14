@@ -1,0 +1,240 @@
+.applied-jobs-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.applied-jobs-container h1 {
+    color: #2d3748;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: #718096;
+    margin-bottom: 2rem;
+}
+
+.loading-state {
+    text-align: center;
+    padding: 3rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.error-message {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #feb2b2;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon {
+    font-size: 4rem;
+    color: #cbd5e0;
+    margin-bottom: 1.5rem;
+}
+
+.empty-state h3 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+    color: #718096;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1985A1, #2da3c2);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(25, 133, 161, 0.3);
+}
+
+/* Applications List */
+.applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.application-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #1985A1;
+    transition: all 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.application-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.job-icon {
+    color: #1985A1;
+    font-size: 1.25rem;
+}
+
+.job-info h3 {
+    color: #2d3748;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Status Badge */
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-badge.pending {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.status-badge.accepted {
+    background-color: #c6f6d5;
+    color: #276749;
+}
+
+.status-badge.rejected {
+    background-color: #fed7d7;
+    color: #c53030;
+}
+
+.status-icon {
+    font-size: 1rem;
+}
+
+.status-icon.pending {
+    color: #d97706;
+}
+
+.status-icon.accepted {
+    color: #38a169;
+}
+
+.status-icon.rejected {
+    color: #e53e3e;
+}
+
+/* Application Details */
+.application-details {
+    display: flex;
+    gap: 2rem;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detail-icon {
+    color: #a0aec0;
+}
+
+/* Recruiter Notes */
+.recruiter-notes {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border-radius: 8px;
+    border-left: 3px solid #1985A1;
+}
+
+.recruiter-notes h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1985A1;
+    margin: 0 0 0.5rem 0;
+}
+
+.recruiter-notes p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Summary */
+.applications-summary {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    color: #718096;
+}
+
+.applications-summary strong {
+    color: #1985A1;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .applied-jobs-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .application-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .application-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+

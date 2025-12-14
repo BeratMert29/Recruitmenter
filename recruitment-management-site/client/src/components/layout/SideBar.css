@@ -1,0 +1,138 @@
+/* Using CSS variables for easy theming */
+:root {
+    --primary-color: #007bff;
+    --sidebar-bg: #1e293b; /* Dark Slate */
+    --sidebar-text-color: #cbd5e1; /* Light Slate */
+    --sidebar-hover-bg: #334155; /* Medium Slate */
+    --sidebar-active-bg: #0d6efd;
+    --content-bg: #f8fafc; /* Very Light Gray */
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 80px;
+  }
+  
+  .main-layout {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text-color);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar-header {
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid var(--sidebar-hover-bg);
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;
+  }
+  
+  .sidebar-link:hover {
+    background-color: var(--sidebar-hover-bg);
+    color: #fff;
+  }
+  
+  /* Style for the active link */
+  .sidebar-link.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-right: 4px solid #60a5fa;
+  }
+  
+  .sidebar-icon {
+    font-size: 1.25rem;
+    min-width: 50px; /* Aligns text when sidebar is expanded */
+    text-align: center;
+  }
+  
+  .sidebar-footer {
+    padding: 1rem 0;
+    border-top: 1px solid var(--sidebar-hover-bg);
+  }
+  
+  .content-area {
+    flex-grow: 1;
+    background-color: var(--content-bg);
+    padding: 2rem;
+    overflow-y: auto;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+  }
+  
+  /* --- Responsive Design for smaller screens --- */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: var(--sidebar-collapsed-width);
+      min-width: var(--sidebar-collapsed-width);
+      max-width: var(--sidebar-collapsed-width);
+    }
+    
+    .content-area {
+      margin-left: var(--sidebar-collapsed-width);
+      width: calc(100% - var(--sidebar-collapsed-width));
+    }
+    
+    .sidebar-text, .sidebar-header h3 {
+      display: none; /* Hide text on small screens */
+    }
+  
+    .sidebar-link, .sidebar-header {
+      justify-content: center;
+    }
+  }
+/* Admin Sidebar */
+.admin-sidebar {
+  background: linear-gradient(180deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+.admin-sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.admin-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logout-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
