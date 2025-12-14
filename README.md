@@ -1,55 +1,109 @@
-# Recruiter App - GroupNo: 15 - Frontend
+# 🧑‍💼 Recruitmenter — Web‑Based Recruitment Management System
 
-## Description
-Recruiter App Frontend is a React.js-based user interface for a MERN recruiter and applicant management system.
-The application provides essential job listing, recruiter management, and CV submission features to demonstrate the core workflow of the system as a Minimum Viable Product (MVP).
-It focuses on main navigation, form handling, and backend API integration for core operations.
+A modern **web‑based recruitment management project** built to organize job listings, track candidates, and simplify the hiring process. This MVP (Minimum Viable Product) focuses on core features like job posting, applicant management, and CV submissions.
 
-## Tech Stack
-- React.js
-- React Router DOM
-- Axios
-- dotenv
+---
 
-## Installation
+## 🚀 Features
 
-1. Unzip the project and navigate to the `client/` directory:
-    ```bash
-    cd client
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Add environment variables:
-    - Copy `.env.example` to `.env` and set your backend API URL.
-    ```
-    REACT_APP_API_URL=http://localhost:5000/api
-    ```
-4. Run the app:
-    ```bash
-    npm start
-    ```
+- 📝 Job Listings for Applicants
+- 👤 Recruiter Dashboard to Manage Posts and View Applicants
+- 📄 CV Submission with Validation
+- 🔁 REST API Integration
+- 🎯 Focus on Core CRUD Operations (MVP)
 
-## Environment Variables
+---
 
-Example `.env.example`:
+## 🛠 Tech Stack
+
+- **React.js** — UI Framework
+- **React Router** — Client-Side Routing
+- **Axios** — API Requests
+- **dotenv** — Environment Variable Management
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/BeratMert29/Recruitmenter.git
+   cd Recruitmenter
+   ```
+
+2. **Navigate to the client directory**
+
+   ```bash
+   cd client
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Set environment variables**
+
+   - Copy `.env.example` to `.env`
+   - Add your backend API URL:
+
+     ```env
+     REACT_APP_API_URL=http://localhost:5000/api
+     ```
+
+5. **Run the app**
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## ⚙️ Environment Variables
+
+`.env` example:
+
 ```
 REACT_APP_API_URL=http://localhost:5000/api
 ```
 
-## MVP Scope & Core Flows
-This MVP implements the main user flows including job listing for applicants, a recruiter/admin dashboard for managing job posts,
-and a CV submission form with validation and API integration. Core CRUD operations such as listing, creating, and managing job postings are functional.
-Detailed user profiles, authentication, and advanced filtering features are not fully implemented and remain as placeholders.
+Ensure the backend server is running and accessible at the above URL.
 
-## Screenshots
-See the `screenshots/` folder for key UI samples:
+---
 
-- `Recruiter_overview.png`: Recruiter dashboard displaying active roles, applicants, events, actions, and highlighted job roles.
-- `applicant_dashboard.png`: Applicant dashboard showing profile status, recent opportunities, notifications, and program application.
-- `landing.png`: Recruiter landing page with steps for users (create account, enter CV, find jobs, apply).
-- `Applicant_CV_Page.png`: Applicant CV submission form with input validation, required field checks.
-- ` Recruiter_job_posting.png`: Recruiter job posting management page for creating/editing job listings.
-- `Applicant_job_listing.png`: Applicant job listing page with filtering options and sample job details.
+## 📌 MVP Scope
 
+- ✅ Public job listing page
+- ✅ Recruiter dashboard for posting/viewing jobs
+- ✅ CV upload form for applicants
+- ✅ API-driven application logic
+- ❌ No authentication or filtering (planned)
+
+---
+
+## 📸 Screenshots
+
+You can include screenshots like:
+
+- `screenshots/landing.png`
+- `screenshots/Applicant_CV_Page.png`
+- `screenshots/Recruiter_dashboard.png`
+
+---
+
+## 📁 Folder Structure
+
+```
+Recruitmenter/
+├── client/               # React frontend
+├── .env.example
+└── README.md
+```
+
+---
+
+## 💬 Contact
+
+Project by (https://github.com/BeratMert29) && (https://github.com/cerentkn04) 
